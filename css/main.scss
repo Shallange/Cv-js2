@@ -1,0 +1,106 @@
+$theme-colors: ("primary": #f88538,
+    "secondary": #9c3100,
+    "dark": rgba(0, 0, 0, 0.6));
+$jumbotron-bg:white;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+.how-section1 {
+    margin-top: -15%;
+    padding: 10%;
+
+    h4 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    .row {
+        margin-top: 10%;
+    }
+}
+
+.how-img {
+    text-align: center;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+}
+
+.navbar-nav li {
+    padding-right: .6rem;
+}
+
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: rgb(255, 253, 253);
+    text-transform: uppercase;
+
+    h1 {
+        font-size: 3.8rem;
+        font-weight: 600;
+        letter-spacing: .3rem;
+        text-shadow: .1rem .1rem .8rem black;
+        padding-bottom: 1.6rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-shadow: .1rem .1rem .5rem black;
+        padding-bottom: 1.6rem;
+    }
+}
+
+
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    background-image: url("../css/../images/landingpage.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer {
+    background-color: $dark;
+    color: $light;
+    margin-top: 1rem;
+    padding: 2rem 0 2rem;
+}
